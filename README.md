@@ -1,29 +1,29 @@
 # OLO API Desktop Tool
 
-OLO API Windows 桌面工具，支持测试 OLO API 的 GET、POST 和 PUT 请求。
+OLO API Windows desktop tool for testing GET, POST, and PUT requests.
 
-## 本地安装与使用
+## Installation and Usage
 
-本项目提供可直接运行的 Windows 程序，不需要安装 .NET 或其他开发环境。
+This project includes a ready-to-run Windows application. You do not need to install .NET or any development tools.
 
-1. 在 GitHub 仓库的文件列表中下载 `OloApiDesktopTool-Setup.zip`。
-2. 将下载的 ZIP 文件解压到任意目录。
-3. 打开解压后的文件夹，进入 `app` 子文件夹，双击其中的 `OloApiDesktopTool.exe` 文件。
-4. 程序启动后即可使用。
+1. Download `OloApiDesktopTool-Setup.zip` from the file list in this GitHub repository.
+2. Extract the ZIP file to any folder.
+3. Open the extracted folder, enter the `app` subfolder, and double-click `OloApiDesktopTool.exe`.
+4. The application is ready to use.
 
-> 如果 Windows 弹出安全提示，请确认文件来源可信后选择“运行”。建议先完整解压 ZIP，再运行 EXE 文件。
+> If Windows displays a security warning, confirm that the file is from a trusted source and choose **Run**. Extract the ZIP completely before launching the executable.
 
-## 功能说明
+## Features
 
-- **Restaurant JSON**：输入 Domain、Key、Secret 和 Restaurant ID，获取餐厅信息。
-- **Custom Request**：向自定义域名和路径发送签名请求，可选填写 JSON 请求体。
-- **Restaurant XML Export**：输入相关信息，下载并保存餐厅菜单 XML。
+- **Restaurant JSON**: Enter the Domain, Key, Secret, and Restaurant ID to retrieve restaurant details.
+- **Custom Request**: Send a signed request to a custom domain and path with an optional JSON request body.
+- **Restaurant XML Export**: Enter the required information to download and save restaurant menu XML.
 
-程序默认使用 `https://ordering.api.olo.com` 作为 API 域名；每个功能页都可以单独修改 Domain。Secret 输入框会自动隐藏敏感内容。
+The default API domain is `https://ordering.api.olo.com`. Each feature tab has its own editable Domain field. Secret fields are masked for privacy.
 
-## 从源码运行（开发者）
+## Running from Source
 
-如果需要修改源码，请安装 .NET 8 SDK，并在项目目录运行：
+To modify or run the source code, install the .NET 8 SDK and run the following command from the project directory:
 
 ```powershell
 dotnet run --project .\OloApiDesktopTool.csproj
