@@ -1,0 +1,11 @@
+.vs/
+bin/
+obj/
+
+# Visual Studio user-specific files
+*.user
+*.suo
+
+# OS files
+Thumbs.db
+Desktop.ini
